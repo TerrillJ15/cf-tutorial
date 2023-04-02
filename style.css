@@ -1,13 +1,26 @@
+body {
+  background-color: #caebf2;
+  color: #001f3f;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.width-100 {
+  display: grid;
+}
+
 .quote {
   font-style: italic;
 }
+
 .container {
   max-width: 840px;
   margin: 0 auto;
 }
+
 .intro {
   text-align: center;
 }
+
 .about-grid {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -17,15 +30,18 @@
     grid-template-columns: 100%;
   }
 }
+
 .i-am,
 .i-like {
   text-align: center;
   text-decoration: none;
 }
+
 .about-list {
   list-style: none;
   padding: 0;
 }
+
 .projects-heading {
   text-align: center;
 }
@@ -34,6 +50,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
 }
+
 .project-image {
   justify-self: center;
   padding: 4%;
@@ -43,14 +60,15 @@
     grid-template-columns: 100%;
   }
 }
-.links-and-contact {
-  display: grid;
-  grid-template-columns: 30% 70%;
+
+.contact-form {
+  justify-self: center;
 }
 
 .links {
   justify-self: center;
 }
+
 .links-list {
   list-style: none;
   padding: 0;
@@ -60,7 +78,10 @@
     grid-template-columns: 100%;
   }
 }
+
 .profile-picture {
+  padding-left: -75px;
+  padding-top: -75px;
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -103,18 +124,12 @@
   z-index: 2;
   transition: all ease-in-out 0.2s;
 }
-body {
-  font-family: "Noto Sans", sans-serif;
-}
 
 h1,
 h2,
 h3,
 h4 {
   font-family: "Roboto Mono", monospace;
-}
-body {
-  background-color: #caebf2;
 }
 
 .container > div {
@@ -131,11 +146,19 @@ hr {
     rgba(0, 0, 0, 0)
   );
 }
-body {
-  color: #001f3f;
-}
 
 .submit-button-wrapper > input {
   background-color: darkblue;
   color: white;
+  margin-left: 30px;
+}
+
+#success {
+  color: green;
+  display: none;
+}
+
+#error {
+  color: red;
+  display: none;
 }
